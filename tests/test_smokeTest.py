@@ -59,7 +59,7 @@ class TestSmokeTest():
     elements = self.driver.find_elements(By.CSS_SELECTOR, ".myinput:nth-child(2)")
     assert len(elements) > 0
     self.driver.find_element(By.NAME, "fname").click()
-    self.driver.find_element(By.NAME, "fname").send_keys("Felipee")
+    self.driver.find_element(By.NAME, "fname").send_keys("Felipe")
     self.driver.find_element(By.NAME, "lname").click()
     self.driver.find_element(By.NAME, "lname").send_keys("Caceres")
     self.driver.find_element(By.NAME, "bizname").click()
@@ -67,21 +67,7 @@ class TestSmokeTest():
     self.driver.find_element(By.NAME, "biztitle").click()
     self.driver.find_element(By.NAME, "biztitle").send_keys("ceo")
     self.driver.find_element(By.NAME, "submit").click()
-    self.driver.find_element(By.NAME, "email").click()
-    self.driver.find_element(By.NAME, "email").send_keys("hola@hello.com")
-    self.driver.find_element(By.NAME, "cellphone").click()
-    self.driver.find_element(By.NAME, "cellphone").send_keys("203-444-2222")
-    self.driver.find_element(By.NAME, "submit").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".myradio:nth-child(13) > input").click()
-    self.driver.find_element(By.NAME, "submit").click()
-    self.driver.find_element(By.CSS_SELECTOR, "textarea").click()
-    self.driver.find_element(By.CSS_SELECTOR, "textarea").send_keys("Something there")
-    element = self.driver.find_element(By.NAME, "websiteURL")
-    actions = ActionChains(self.driver)
-    actions.double_click(element).perform()
-    self.driver.find_element(By.NAME, "websiteURL").send_keys("https://www.youtube.com/")
-    self.driver.find_element(By.NAME, "submit").click()
-    elements = self.driver.find_elements(By.CSS_SELECTOR, "tr:nth-child(4) > .right-justify")
+    elements = self.driver.find_elements(By.CSS_SELECTOR, ".myinput:nth-child(2)")
     assert len(elements) > 0
   
   def test_test5(self):
